@@ -1,0 +1,134 @@
+.register-container {
+  background-color: rgba(43, 45, 48, 1);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  width: 100%;
+}
+
+.register-top-container {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.register-top {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.register-main {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  background-color: rgba(132, 136, 149, 0.5);
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+.register-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 80px;
+}
+
+.id-section {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-icon {
+  font-size: 64px;
+  color: #8aff8a;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  margin-right: 100px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 18px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.button-group button:first-child {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.button-group button:last-child {
+  background-color: #ffa500;
+  color: white;
+}
