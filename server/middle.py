@@ -37,7 +37,7 @@ def signup_middle(data):
     try:
         search = collection.find_one({"userid" : data["id"]})
         if search == None:
-            number = data["num"].replace("-", "") # 전화번호를 '-'없이 데이터 베이스에 저장함
+            number = data["num"].replace("-", "") # 24/08/29 전화번호를 '-'없이 데이터 베이스에 저장함
             hashed_password = hash_password(data["pw"])
             collection.insert_one({"userid": data["id"], "userpw": hashed_password, "usernumber": number})
             return "true"

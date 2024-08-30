@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../css/Header.css";
 import Sidebar from "./Sidebar";
 
@@ -7,10 +7,22 @@ const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isLogin, setLogin] = useState(false);
   const location = useLocation(); // 현재 경로를 추적
+  const navigator = useNavigate();
 
   // 사이드바 열고 닫힘 확인
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  // 24.08.30 페이지로 이동
+  const Move_to_Main = () => {
+    navigator("/main");
+  };
+  const Move_to_List = () => {
+    navigator("/list");
+  };
+  const Move_to_Map = () => {
+    navigator("/map");
   };
 
   // localStorage에 저장된 토큰이 있는지 확인
@@ -33,19 +45,19 @@ const Header = () => {
           </button>
           <div className="logoBox">
             <img src="./image/logo.png" alt="logo" />
-            <h2>GUARDIAN</h2>
+            <h2>Auto Aware</h2>
           </div>
         </div>
         <nav className="menu">
           <ul>
             <li>
-              <a href="#">main ▼</a>
+              <div onClick={Move_to_Main}>main ▼</div>
             </li>
             <li>
-              <a href="#">List ▼</a>
+              <div onClick={Move_to_List}>List ▼</div>
             </li>
             <li>
-              <a href="#">Map ▼</a>
+              <div onClick={Move_to_Map}>Map ▼</div>
             </li>
           </ul>
         </nav>

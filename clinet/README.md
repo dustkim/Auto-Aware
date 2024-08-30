@@ -17,3 +17,9 @@
 ### Component
 
 #### TopList 는 Face, List, MyPage, Register 각 component에 담겨있음, Sidebar 는 Header에 담겨있음
+
+<hr>
+
+### .env파일
+
+#### mongodb key, secret key 설정해줘야함

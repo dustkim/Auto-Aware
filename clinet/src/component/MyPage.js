@@ -13,7 +13,7 @@ const MyPage = () => {
     date: "24-08-22",
     class: "Sub_oner",
     registerDate: "2024-08-22 12:43",
-    imageUrl: "/Users/gimgijae/Desktop/ga/clinet/public/image/enfj.jpeg", // 실제 이미지 경로로 교체 필요
+    imageUrl: "/Users/gimgijae/Desktop/ga/client/public/image/enfj.jpeg", // 실제 이미지 경로로 교체 필요
   };
 
   const handleBack = () => {

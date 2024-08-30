@@ -44,6 +44,9 @@
   z-index: 999; /* 사이드바 뒤에 오도록 설정 */
 }
 /* 사이드바 내부 스타일 */
+button:hover {
+  cursor: pointer;
+}
 /* upload 버튼 스타일 */
 .upload_Box {
   width: 100%;

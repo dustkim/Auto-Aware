@@ -12,7 +12,8 @@ const Signup = () => {
   const [finish_pw_check, setCheck] = useState(false);
 
   // 정규 표현식
-  const idRegEx = /^[A-Za-z0-9]{8,20}$/;
+  // 24/08/30 아이디 최소 8자에서 6자로 변경
+  const idRegEx = /^[A-Za-z0-9]{6,20}$/;
   const passwordRegEx = /^[A-Za-z0-9]{8,20}$/;
   const numberRegEx = /^\d{3}-\d{4}-\d{4}$/;
 
@@ -126,7 +127,7 @@ const Signup = () => {
                 type="text"
                 id="userid"
                 value={userid}
-                placeholder="아이디"
+                placeholder="영문, 숫자 포함 최소 6자 이상"
                 className="signup_input"
                 onChange={(e) => setID(e.target.value)}
               />
@@ -137,7 +138,7 @@ const Signup = () => {
                 type="password"
                 id="password"
                 value={password}
-                placeholder="비밀번호"
+                placeholder="영문, 숫자 포함 최소 8자 이상"
                 className="signup_input"
                 onChange={(e) => setPW(e.target.value)}
               />
@@ -162,7 +163,7 @@ const Signup = () => {
                 type="text"
                 id="Number"
                 value={number}
-                placeholder="전화번호"
+                placeholder="'-'없이 입력"
                 className="signup_input"
                 onChange={numberAddHypen}
               />
