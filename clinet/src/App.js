@@ -8,6 +8,7 @@ import Register from "./component/Register";
 import Face from "./component/Face";
 import List from "./component/List";
 import MyPage from "./component/MyPage";
+import Map from "./component/Map";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/face" element={<Face />} />
           <Route path="/list" element={<List />} />
           <Route path="/mypage" element={<MyPage />} />
+          <Route path="/map" element={<Map />} />
         </Routes>
       </div>
     </Router>

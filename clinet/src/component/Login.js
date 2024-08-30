@@ -23,9 +23,10 @@ const Login = () => {
         body: JSON.stringify({ userid, password }),
       });
 
-      const data = await response.text();
+      const data = await response.json(); // text() -> json()으로 수정, text()일 경우 문자열은 bool값으로 인식되지 않기 때문에 json으로 받아줘야함
 
       if (data !== "false") {
+        console.log(data);
         window.alert("로그인 완료!");
         localStorage.setItem("authToken", data);
         navigate("/main");
